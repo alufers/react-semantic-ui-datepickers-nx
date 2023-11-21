@@ -30,7 +30,7 @@ const CustomIcon = ({
         aria-pressed="false"
         data-testid="datepicker-clear-icon"
         link
-        name={clearIcon}
+        name={clearIcon as any}
         onClick={onClear}
       />
     );
@@ -43,7 +43,7 @@ const CustomIcon = ({
     });
   }
 
-  return <SUIIcon data-testid="datepicker-icon" name={icon} />;
+  return <SUIIcon data-testid="datepicker-icon" name={icon as any} />;
 };
 
 export default CustomIcon;

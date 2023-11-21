@@ -81,7 +81,7 @@ const Calendar: React.FC<CalendarProps> = ({
   const calendarInstance = (
     <SemanticUiReact.Segment
       {...rootProps}
-      {...(SemanticUiReact.Ref ? {} : { ref: rootRef })}
+      ref={rootRef}
       inverted={inverted}
       className={cn('clndr-calendars-segment', {
         'clndr-floating': !inline,
@@ -219,13 +219,7 @@ const Calendar: React.FC<CalendarProps> = ({
       ) : null}
     </SemanticUiReact.Segment>
   );
-  return SemanticUiReact.Ref ? (
-    <SemanticUiReact.Ref innerRef={rootRef}>
-      {calendarInstance}
-    </SemanticUiReact.Ref>
-  ) : (
-    calendarInstance
-  );
+  return calendarInstance;
 };
 
 export default Calendar;
