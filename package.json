@@ -102,10 +102,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/arthurdenner/react-semantic-ui-datepickers.git"
+    "url": "https://github.com/alufers/react-semantic-ui-datepickers.git"
   },
   "bugs": {
-    "url": "https://github.com/arthurdenner/react-semantic-ui-datepickers/issues"
+    "url": "https://github.com/alufers/react-semantic-ui-datepickers/issues"
   },
-  "homepage": "https://github.com/arthurdenner/react-semantic-ui-datepickers#readme"
+  "homepage": "https://github.com/alufers/react-semantic-ui-datepickers#readme"
 }
